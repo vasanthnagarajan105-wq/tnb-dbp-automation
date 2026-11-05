@@ -7,6 +7,9 @@
     <groupId>com.tnb</groupId>
     <artifactId>tnb-dbp-automation</artifactId>
     <version>0.1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <dependencyManagement>
         <dependencies>
             <!-- Override vulnerable transitive version (WS-2019-0379) pulled in by REST Assured -->
@@ -55,6 +58,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
+                <configuration>
+                    <release>21</release>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
